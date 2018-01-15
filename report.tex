@@ -10,6 +10,10 @@
 \usepackage{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Required for accented characters
 \usepackage{multicol}
+
+
+\usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage{tikz}
 
 \linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
@@ -84,7 +88,7 @@ Stars are created every day, by a random process. They don't arise ex-nihilo, bu
 
 \paragraph*{}
 In the stars, gas clouds and the universe in general, everything  a question of balance. The clouds within the nebula must maintain balance between their inner pressure and their temperature. These are explained by the \textbf{equation of state of an ideal gas} : 
-
+\label{GP}
 \begin{multicols}{2}
 
 \begin{equation}
@@ -147,6 +151,43 @@ The star's boring and repetitive life is to maintain an equilibrium between the 
 
 Since in the world, there are a lot of different types of star, we will first begin by explaining the different classifications and how they are important.
 
+\subsection{The solar flares : how this phenomenon was discovered}
+
+The balance between the star's gravity and its pressure was discoverd long ago by Galileo thanks to solar flares.
+
+Solar flares happens in the atmosphere of the sun. It is a brutal release of energy at the surface of the sun : more specifically, it is an emission of light and particles. For the biggest flares, plasma\footnote{The plasma here isn't what is in your TV, or in your blood, but rather a very hot state of matter, just like solid or liquid, but where particles are so hot they form a sort of soup. There can be massive amounts of matter rejected in outer space, as much as 10 million tons. This seems huge but it is nothing compared to the actual size of the star.} can be rejected too.. This flow of charged particles can have huge consequences on our systems and scientist are looking forward to forecast them so that they study carefully and meticulously this phenomenon. An example of the consequences of solar flares is perturbation of a satellite or the provocation of problems on electrical networks and phone networks.
+
+\begin{figure*}[h!]
+    \centering
+  \begin{subfigure}[b]{0.45\textwidth}
+      \includegraphics[height=3.7cm]{solar}
+      \caption{Solar flares phenomenon}
+  \end{subfigure}%
+  ~ 
+  \begin{subfigure}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[height=3.7cm]{solar-magn}
+      \caption{Solar flare's manetic fields}
+  \end{subfigure}
+\end{figure*}
+
+
+
+\paragraph*{}
+Indeed, magnetic fields created during a solar flare are turbulent and unpredictable. The process is that field lines wind and tangle like a rope (as shown in the following picture). They ultimately break and the energy contained in the structure is released when accelerated charged particles meet the gas. The flare do not occur at the very surface of the sun but a little further, in a layer called the corona of the sun. 
+
+This scheme points out the winded magnetic fields which create energetical flows. When it breaks, the plasma is ejected with its energy. This is one of te reason matter is thrown out of the star during its lifetime.\footnote{The second one being that they emit light, and that light and matter are essentially the same thing.} 
+
+Even if the scientist are sure of the flare's causes, they are still working on the mechanisms behind it, for example they still do not know how the magnetic field increase the particle's speed. 
+
+\paragraph*{}
+Another consequence of the solar flares are the beautiful aurorapolar caused by the solar winds. High speed very magnetic particles are forced in outer space in random directions. If some of them reach earth, they are directed towards the poles thanks to earth's magnetic field's shape. The remaining particles then hit the pole's atmosphere at full speed, an emit light of unusual colors as they are unusual light particles.
+\begin{figure}[h]
+\centering
+\includegraphics[height = 4cm]{aurora}
+\caption{The earth's magnetic field and magnetic light particles trying to flow through it}
+\end{figure}
+
 \section{Introduction to stellar classifications}
 
 
@@ -168,7 +209,7 @@ The most used system is the M-K\footnote{Named after their inventors, Morgan and
 
 \subsection{Color and temperture}
 
-The colors and temperature of a star are intrinsicaly connected. Scientist use spectrum analysis to determine a star's temperature and can also get an approximation of its mass.
+The colors and temperature of a star are intrinsicaly connected. Scientist use spectrum analysis to determine a star's temperature and can also get an approximation of its mass, radius and luminosity, making it the most important criteria in the MK classification.
 
 
 
@@ -181,22 +222,51 @@ The colors and temperature of a star are intrinsicaly connected. Scientist use s
 The coolest stars are M-star and O are the hottest. Our system's beloved star, the sun is a G type of star.
 
 
-\subsection{Radius}
+\subsection{Radius and mass}
 
-As very often in astrophysics, the units are specific. Since we will give the radius of the different stars using these specific units to fit the enormous values.
+As very often in astrophysics, the units are specific. Since we will give the radius of the different stars using these specific units to fit the enormous values. The most used unit for interstellar distances is the lightyear, however, it doesn't fit the star requirement, a light year is the distance traveld by a light photon in a hole year\footnote{Remember that light travels at 300 000 km per second.} whereas it only takes 7 minutes for light to reach earth from the sun. The usual standard for creating units is taking historical references (like farenheit for an example). Ergo, for stars, the reference is the sun. A radius of 1 means that is has the same size as the sun. same goes for the mass, the reference value of one corresponds to the sun's mass.
 
+\subsection{Luminosity}
+
+Curious as it may sound, the luminosity and the color aren't exactly corresponding, and it is needed to have both to correctly describe a star. The luminosity actually takes into account the magnetic field of the star making it even more important. As in the previous section, the only change is in the units, however, not only a linear change here is needed to correspond to the \textit{usual} metric system.
+\paragraph*{}
+The conversion to obtain the luminosity is given here :
+\begin{multicols}{2}
+
+\begin{equation}
+\frac{L_\star}{L_\odot} = 10^{0.4\left(M_\mathrm{bol,\odot} - M_\mathrm{bol,\star}\right)}
+\end{equation}
+\vspace{2cm}
+\begin{itemize}
+\item $L_\star$ : the star's luminosity
+\item $L_\odot$ : the sun's luminosity
+\item $M_\mathrm{bol,\odot}$ : magnitude of the star.
+\item $M_\mathrm{bol,\star}$ : magnitude of the earth
+\end{itemize}
+\end{multicols}
+
+\subsection{The prevalence}
+
+The prevalence is the proportion of this specific star amongst every star in the universe. It is usually given in a percentage and a higher percentage indicates that this star is more comon.	
+
+\subsection{Corresponding table of different criteria in an MK table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = \textwidth]{criteria}
+\caption{Different criteria in MK category system}
+\end{figure}
 
 \subsection{classification in star population}
 
 A group of stars sharing the same properties is called a stellar population. 
-Differentiating them is quite difficult due to the number of stars and their close specification. Putting them in closed boxes seems like an impossible task. Stellar populations are so similar that specialists talks of a \textit{``continuum characteristics that reflect the changes in star formation with time''}. Each stellar population is a witness of an event occured previsously in the Galaxy's life.
+Differentiating them is quite difficult due to the number of stars and their close specification. Putting them in closed boxes seems like an impossible task. Stellar populations are so similar that specialists talks of a \textit{``continuum characteristics that reflect the changes in star formation with time''}. Each stellar population is a witness of an event occured previsously in the Universe's life.
 
 
 
 
 \paragraph*{}
-However, three main stellar populations are associated to three dynamical components of the Galaxy:
-
+Since stars are the most common object in space, the structure of star populations define the structure and shape of the galaxies. There are three main different shape for a star population :
 
 \begin{itemize}
  \item The disk population : rotating and flattened region
@@ -205,6 +275,17 @@ However, three main stellar populations are associated to three dynamical compon
 
 \end{itemize}
 
+A galaxy can have a form that is a mix of all those shapes, or any individual one.
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 6cm]{shapes}
+\caption{Different shapes for a galaxy and a star population}
+\end{figure}
+
+An example of a galaxy that is a great mix of all those shapes is the \textbf{Sombrero} galaxy. 
+
+Disk and bulge populations are often rich in heavy elements (above helium on the periodic table). Halo populations seem to be very poor in heavy elements.
 
 
 \section{The end of the equilibrium and the end of the star}
@@ -218,7 +299,13 @@ Then, the fusion process ends, and the only force applying on the star is its ow
 
 The most common, for smaller stars is the \textbf{brown dwarf}. This ``star'' isn't quite other stars as it sits inbetween a star and a planet, but classifications usually take these into account, as we will. The fate of starts as described in the first section \textit{per say} will be described in the section \ref{whiteDwarf}.
 
-\subsection{Brown dwarf}
+\subsection{Yellow or brown dwarf}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 9cm]{brown-sheet}
+\caption{The place of the brown dwarf in the classification }
+\end{figure}
 
 A brown dwarf is a failed star, heavy enough to have ignited deuterium fusion, but couldn't manage to fuse hydrogen and fails shining like other stars. They weigh less than 0.07 times the mass of the sun or around 75 times Jupiter's mass.
 
@@ -231,8 +318,15 @@ The reason why scientist were extremely interested in these Brown Dwarf is that 
 
 
 \subsection{White dwarf}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 9cm]{WD-sheet}
+\caption{The place of the white dwarf in the classification }
+\end{figure}
+
 \label{whiteDwarf}
-A white dwarf is the remains of non-massive star whose fusion has stopped: after merging hydrogen into helium and helium into carbon and oxygen, the gravity is not compensated by the energy of the fusion and the star collapses on itself. But to deceive death and avoid collapsing completely into a black hole, the star still has a trick up her sleeve. Electrons have a very strong repulsive force one towards another. The star then reaches another equilibrium point called a white dwarf.
+A white dwarf is the remains of non-massive star (e.g red giants) whose fusion has stopped: after merging hydrogen into helium and helium into carbon and oxygen, the gravity is not compensated by the energy of the fusion and the star collapses on itself. But to deceive death and avoid collapsing completely into a black hole, the star still has a trick up her sleeve. Electrons have a very strong repulsive force one towards another. The star then reaches another equilibrium point called a white dwarf.
 
 
 \paragraph*{}
@@ -255,7 +349,38 @@ This decline is extremely slow and ultimately, that the \textbf{white dwarf} wil
 \caption{Time scale of a star's life cycle in the universe}
 \end{figure}
 
-If the star is a massive one, meaning at least 10 times the mass of the sun, its destiny is very different. They explode in supernovae. They also are very difficult to find because it is a rare phenomenon: around 2 or 3 supernovae per galaxy per century. To find one, scientist have to scan 1000 galaxies with a telescope that takes pictures every night of these galaxies and compare to the previous pictures too find some supernovae.
+If the star is a massive one, meaning at least 10 times the mass of the sun, its destiny is very different. They explode in supernovae\footnote{Explained later in this paper}. They also are very difficult to find because it is a rare phenomenon: around 2 or 3 supernovae per galaxy per century. To find one, scientist have to scan 1000 galaxies with a telescope that takes pictures every night of these galaxies and compare to the previous pictures too find some supernovae. The white dwarves are much more frequent.
+
+\subsection{Red giant}
+\begin{figure}[h]
+\centering
+\includegraphics[width = 10cm]{sheet-RG}
+\caption{Red giant's place in the classification}
+\end{figure}
+
+
+Average stars, don't grow well, they expand and become the most voluminous stars of the universe. They have no more hydrogen to fuse in their core and are forced to ignite a reaction into the surroundings of core, or the outer core. This forces the star to expand quickly, up to 200 times bigger and 1000 times brighter than the Sun is to this day, but only up to 10 time its mass. They can even be up to three times lighter than the sun. 
+
+\paragraph*{}
+As far as star go, Red giants are rather cold because of their size. As told in the ideal gas status equation (page \pageref{GP}, we know that if the pressure $P$ decreases (just like a baloon, if the star expands, the pressure decreases, because we are talking here about the outer pressure, pressing \textit{on} the star to keep it as small as possible), the temperature will decrease.
+The Sun will morph into a red giant in 5 billion years, it will turn to a huge star. This might destroy the current planetary system we live in, and will make all life on earth extinct\footnote{This shouldn't be at all pessimistic, because 5 billion years is more than earth itself. It is estimated that life took about 1 billion years to appear in the form of a small photosynthetic bacteria. It took us 3 billion years old to bacteria to what we are now, where will 5 more billion years lead us ?}
+
+\subsection{Blue Giant}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 10cm]{sheet-BG}
+\caption{Blue Giant's place in the classification}
+\end{figure}
+ 
+Some stars, a little more massive than those who become a red giant, become a blue giant. These stars are at least 10 times the size of the sun. They are highly brilliant and very hot. Also very massives, they consume their hydrogen very fast so that they lifetime is much lower: from 10 to 100 million years (remember that in general, the more massive, the shorter lifetime). They act like red giant but after fusionning hydrogen and helium she grows and cool down to become a Red Supergiant. These stars are the most massive ones compared to red giants, they will usually ultimately become supernovae and finally Black Holes. 
+
+It is very rare, but the giant stars can also become variable stars (which can mean lots of things) with a less stable phase.
+
+
+
+
 \subsection{Variable Stars}
 
 At the red giant stage or yellow giant stage some stars become variable stars. Though There are several types of variable stars, the majority of them are unstable star whose brightness varies because of volume variations. Indeed, stars are mainly very stable in their main sequence but when they get to the Red Giant stage, they become highly unstable for a while. 
@@ -284,9 +409,13 @@ But variable stars aren't always periodical, for another type is an aperiodic on
 The last type of variable stars is the \textbf{novae}: some white dwarf in a binary system can become novae. If they are associated closely with a red giant in a binary star-system, the external layers of the red giant are attracted by the white dwarf. This phenomenon is called \textbf{matter transfer} and an accretion disk of spinning matter is formed around the white dwarf. This matter is composed mainly of hydrogen, which will ultimately be attracted by the white dwarf and will form a hot and dense layer around it. The brightness increases until the phenomenon stops. This type of variable star is not periodic and every change to the system is irreversible. 
 
 
-\subsection{Supernova}
+\subsection{Supernovae}
 
-Those supernovae are found approximately at 100 billions light year away from our solar system. They were really important for the beginning of earth life because all the heavy elements were formed by the supernovae. Indeed only a star with such power could produce the heavier elements. At the beginning scientist only knew that the first one (until iron) were produced by the red giants in the fusion process but were unable to determine where did the heavier elements (like lead, or uranium or even copper) were created.
+A supernovae is not \textit{per say} a class of star, this is why we will not give them a star classification place, but rather an event that occurs to a massive star, sometimes in somme classifications, unstead of putting supernovae in the classification, they put the star as ``potential supernovae star''.
+
+\paragraph*{}
+
+The supernovae are found approximately at 100 billions light year away from our solar system. They were really important for the beginning of earth life because all the heavy elements were formed by the supernovae. Indeed only a star with such power could produce the heavier elements. At the beginning scientist only knew that the first one (until iron) were produced by the red giants in the fusion process but were unable to determine where did the heavier elements (like lead, or uranium or even copper) were created.
 
 \paragraph*{}
 
@@ -304,10 +433,16 @@ When the star has enough mass, it is layered with different fusion process when 
 \paragraph*{}
 The red giant\footnote{All massive stars, at the end of their fusion stages start growing and gets bigger and bigger, it is called a red giant.} at the end of the fusion sequence has an iron core, then a layer of helium, then a layer carbon, oxygen, neon,  magnesium, silicon, and finally neon. Each element produced is the fuel for the deeper layer's  fusion. This fusion process stops when the most stable element is created : \textbf{iron}. The star then has the mass of the earth and no longer has any energy source available to fight against gravitational forces. The core of the star contracts then relaxes and hits its outer layer. By a chain reaction, each layer hit its outer layer and finally the whole star explodes. The speed and the violence of the blast creates enough energy to create by fusion\footnote{Remember that fusion is actually created by atoms colliding, and the shock is creating new elements.} the other elements like zinc, gold, silver, argon, etc... The explosion spreads them in the whole cosmos, and it \textit{is} how all the elements heavier than iron were created on earth.
 
-\paragraph*{}
+\subsection{After the supernovae : the neutron star}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 10cm]{sheet-NS}
+\caption{Neutron star's place in the classification}
+\end{figure}
 The supernovae leaves behind it the remains of the star: a neutron star. The scientist predicted the existence of these stars theoretically before observing the first one. They observed in 1967 the first neutron star thanks to radio astronomy. By analyzing the different radio signal emitted in the universe, they discovered a precise periodic signal. The research led to the Crab nebula. A neutron star, also called pulsar is in the core of the residues of a supernovae.
 
-\subsection{After the supernovae : a pulsar}
+\subsection{Pulsar}
 
 \begin{figure}[h]
 \centering
