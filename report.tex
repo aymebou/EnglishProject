@@ -1,0 +1,428 @@
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\usepackage{multicol}
+\usepackage{tikz}
+
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{30pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{20pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{The life of a star}\\ % Title
+Autonomous project : English} % Subtitle
+
+\author{\textsc{Pauline Dubuc, Suzon Thenaux, Aymeric Bouzigues} % Author
+\\{\textit{Mines Nancy}}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+\begin{abstract}
+To write.
+\end{abstract}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[height=10cm]{star-intro}
+\captionsetup{labelformat=empty}
+\caption{Star cluster captured by the Hubble Telescope}
+\end{figure}
+\newpage
+\tableofcontents
+\newpage
+\section*{Introduction : the importance of stars in the universe}
+
+Stars are everywhere in the universe. They are far from being only the little dots we can see at night when the sky is clear. They are the power plants of the universe and its most common inhabitant. They also are the forge of new matter, as every atom in your body that isn't hydrogen was once created in the heart of a star and expelled in the universe when the star exploded, to later coalesce in matter cluster, forming planets and maybe later, you.
+These huge spheres of burning gas are essential the universe, and is essential for us, as the sun is our biggest energy source and our only light source. 
+
+\paragraph*{}
+With $10^{22}$ stars in the universe\footnote{About the same as the number of sand grains in planet earth.}, this makes \textit{the} most frequent celestial body in space, some of them living as much as 100 billion years while others explode being only few million years old, their complexity is yet to be fully understood.
+
+\section{The theory principles behind a star}
+
+\subsection{The creation process}
+Stars are created every day, by a random process. They don't arise ex-nihilo, but are formed in \textbf{nebulae} that can be as much as 300 light-years\footnote{ 1 light year is over 9.5 Billion kilometers, in comparison, earth-sun is 0.15 Billion kilometers.} wide. In a nebula, there are huge clouds of gas in movement. One slight event can provoke the creation of a star, while nothing can happen in millions of years, making the creation process very random.
+
+\paragraph*{}
+In the stars, gas clouds and the universe in general, everything  a question of balance. The clouds within the nebula must maintain balance between their inner pressure and their temperature. These are explained by the \textbf{equation of state of an ideal gas} : 
+
+\begin{multicols}{2}
+
+\begin{equation}
+P\cdot V = n \cdot R \cdot T
+\end{equation}
+\vspace{2cm}
+\begin{itemize}
+\item P : the pressure
+\item V : the volume
+\item n and R : constants of the gas cloud.
+\item T : the temperature 
+\end{itemize}
+\end{multicols}
+
+The temperature within the nebula tends to increase, due to light rays from nearby stars providing a slow heat source, just like the sun with earth. As we can see in this equation, an increase in temperature will trigger an increase in volume and pressure. As the pressure steadily increases along with the temperature, the particles within the gas speed up, as seen in the \textbf{equation of particle speed in function of temperature} :
+
+\begin{multicols}{2}
+
+\begin{equation}
+v = C \cdot \sqrt{T}
+\end{equation}
+\vspace{2cm}
+\begin{itemize}
+\item v : the particle speed
+\item T : the temperature
+\item C : constant of the gas cloud. 
+\end{itemize}
+\end{multicols}
+
+As the particle speeds up, more and more collision occur within the cloud and just like a lighter, the cloud start to ignite and the star is born. The \textit{ignite} is actually the fusion\footnote{Explained in next section} process beginning which is the essence of what a star is and why it \textit{lives}.
+
+\subsection{The fusion process}
+The fusion process is the essence of the star, it makes it shine, and allows it not to collapse into a \textbf{black hole}\footnote{A black hole is a object with huge density, when gravity collapses atoms on themselves, they are explain in section REF}. Atoms, and matter in general contain energy, energy and mass are essentially the same thing\footnote{Einstein exposed a link between them : $E = mc^2$ chich translates that you can actually convert energy and mass easily.}. 
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 6cm]{binding-energy}
+\caption{Energy contained in atoms}
+\end{figure}
+
+As said earlier, stars are mainly composed of hydrogen, and they use it to gather energy, the energy they need to shine. As shocks occur, the \textbf{Hydrogen in the star becomes Helium}. As we can see in Figure 2, Helium contains less energy than hydrogen, which means that the energy difference when the transformation occurs is released in light and heat.
+
+The fusion process follows this pattern :
+\begin{figure}[h]
+\centering
+\includegraphics[height = 6cm]{fusion}
+\caption{Hydrogen fusion}
+\end{figure}
+
+The interesting fact to notice is that fusion auto-fuels itself : it needs heat and the process generates heat.
+\paragraph*{}
+The star's boring and repetitive life is to maintain an equilibrium between the fusion process and the gravity, the first one expanding the atoms and the star, and the second one collapsing it on itself.
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 4cm]{balance}
+\caption{Balance between fusion and gravity}
+\end{figure}
+
+Since in the world, there are a lot of different types of star, we will first begin by explaining the different classifications and how they are important.
+
+\section{Introduction to stellar classifications}
+
+
+
+Stars can be sorted out according to a variety of different physical parameters:
+
+\begin{itemize}
+\item Their position in the \textbf{lifecycle of the star} (e.g main sequence or dying).
+\item Their color (refered as \textbf{spectral type} later in this document.
+\item \textbf{The prevalence}.
+\item \textbf{The temperature}. 
+\item \textbf{The luminosity}.
+\item \textbf{The radius}.
+\item \textbf{The mass}.
+\item \textbf{The age}.
+\end{itemize}
+
+The most used system is the M-K\footnote{Named after their inventors, Morgan and Keenan} system, which is a lettering system that corresponds to the star's spectrum\footnote{Color} and ergo its temperature. But the color only is not enough to put the stars in boxes and give them labels.  
+
+\subsection{Color and temperture}
+
+The colors and temperature of a star are intrinsicaly connected. Scientist use spectrum analysis to determine a star's temperature and can also get an approximation of its mass.
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 4cm]{M-O}
+\caption{Star lettering system}
+\end{figure}
+
+The coolest stars are M-star and O are the hottest. Our system's beloved star, the sun is a G type of star.
+
+
+\subsection{Radius}
+
+As very often in astrophysics, the units are specific. Since we will give the radius of the different stars using these specific units to fit the enormous values.
+
+
+\subsection{classification in star population}
+
+A group of stars sharing the same properties is called a stellar population. 
+Differentiating them is quite difficult due to the number of stars and their close specification. Putting them in closed boxes seems like an impossible task. Stellar populations are so similar that specialists talks of a \textit{``continuum characteristics that reflect the changes in star formation with time''}. Each stellar population is a witness of an event occured previsously in the Galaxy's life.
+
+
+
+
+\paragraph*{}
+However, three main stellar populations are associated to three dynamical components of the Galaxy:
+
+
+\begin{itemize}
+ \item The disk population : rotating and flattened region
+\item The bulge population : rounded and central region
+\item The halo population : far outer regions (ellipsoidal geometry)
+
+\end{itemize}
+
+
+
+\section{The end of the equilibrium and the end of the star}
+
+Unfortunately for the star, this balance isn't forever and decays with time. In the beginning, the star fuses Hydrogen, then Helium, then all the way to Iron, which is \textbf{the most stable element in the universe}, the star cannot get anymore energy because it has reached the end of the fusion process.
+\begin{equation}
+H \rightarrow He \rightarrow C\ (Carbon) \rightarrow Ne\ (Neon)\rightarrow O\ (Oxygen)\rightarrow Fe\ (Iron)
+\end{equation}
+
+Then, the fusion process ends, and the only force applying on the star is its own gravity. The star then collapses on itself and begins a long journey to delay a unavoidable end for the star. It can take different path, that vary with the star's mass. For the fate of the star, only the inital mass has a noticeable influence. In this paper, the stars will be explained starting by lighter stars all the way to the heaviest, producing a \textbf{black hole}.
+
+The most common, for smaller stars is the \textbf{brown dwarf}. This ``star'' isn't quite other stars as it sits inbetween a star and a planet, but classifications usually take these into account, as we will. The fate of starts as described in the first section \textit{per say} will be described in the section \ref{whiteDwarf}.
+
+\subsection{Brown dwarf}
+
+A brown dwarf is a failed star, heavy enough to have ignited deuterium fusion, but couldn't manage to fuse hydrogen and fails shining like other stars. They weigh less than 0.07 times the mass of the sun or around 75 times Jupiter's mass.
+
+
+The Brown Dwarf were discovered in 1995 for the first time: they are difficult to find because they are so \textit{dark} that an infrared detector is needed to detect them. 
+The main reason why scientist consider these objects as stars is that they are born in the same way: the gravitational collapse of a cloud of gas. Because of their mass they rapidly stop emitting light and emit instead infrared radiation. The temperature of the Brown Dwarf are between 400K and 2500K. 
+
+
+The reason why scientist were extremely interested in these Brown Dwarf is that they thought that Brown Dwarf were the \textbf{hidden matter of the universe}. Recent studies found that there is invisible and unknown matter in the universe\footnote{ This matter is now know as dark matter and makes up around 27\% of the mass of the universe. It is the reason why the galaxies, planets, stars and globally the universe sticks together even if all the stellar object spins with high speed.}. One of the hypothesis when Brown Dwarf were discovered is that numerous Brown Dwarf were the dark matter of the universe because they were so hard to detect. this hypothesis turned out wrong because not enough brown stars exist in the universe. To this day, the origin of dark matter remains unknown.
+
+
+\subsection{White dwarf}
+\label{whiteDwarf}
+A white dwarf is the remains of non-massive star whose fusion has stopped: after merging hydrogen into helium and helium into carbon and oxygen, the gravity is not compensated by the energy of the fusion and the star collapses on itself. But to deceive death and avoid collapsing completely into a black hole, the star still has a trick up her sleeve. Electrons have a very strong repulsive force one towards another. The star then reaches another equilibrium point called a white dwarf.
+
+
+\paragraph*{}
+ It is now 1 million times denser than before\footnote{For example, if a mobile phone was as dense as a white dwarf it would weigh approximately 10 tons.}. Its density reaches 1 ton per $cm^2$. The White Dwarf usually have the size of planet Earth but their mass is approximately that of the sun.
+
+\paragraph*{}
+
+Since massive stars are very rare, this a the fate of the $96\%$ non massive stars of our galaxy. 
+Nevertheless it keeps shining thanks to the energy stored by the star it once was. Indeed, the reduced surface of the star enables the heat transfer to be also reduced and slow, so that the star can keep the energy longer and delay its certain death.
+\paragraph*{}
+
+Then the star starts to decline slowly, its brightness diminishes and its gets colder and colder until the star dies. This process can take a very log time, even from the universe's point of view. 
+The white dwarf are the embers of Red Giant: they are still shining but far less than their parent star but declining slowly.
+This decline is extremely slow and ultimately, that the \textbf{white dwarf} will become a \textbf{black dwarf} within around 10 billions years. The universe is too young\footnote{The universe is approximately 13,7 billion years old.} to know such Black Dwarf. 
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = \textwidth]{time}
+\caption{Time scale of a star's life cycle in the universe}
+\end{figure}
+
+If the star is a massive one, meaning at least 10 times the mass of the sun, its destiny is very different. They explode in supernovae. They also are very difficult to find because it is a rare phenomenon: around 2 or 3 supernovae per galaxy per century. To find one, scientist have to scan 1000 galaxies with a telescope that takes pictures every night of these galaxies and compare to the previous pictures too find some supernovae.
+\subsection{Variable Stars}
+
+At the red giant stage or yellow giant stage some stars become variable stars. Though There are several types of variable stars, the majority of them are unstable star whose brightness varies because of volume variations. Indeed, stars are mainly very stable in their main sequence but when they get to the Red Giant stage, they become highly unstable for a while. 
+
+
+
+
+
+\paragraph*{}
+The balance between gravity and pressure is broken by a complex mechanism, so that sometimes the gravity wins for a while, the planet contracts itselfs until the pressure takes back the upper side and the star dilates. These volume variation provokes temperature fluctuations. When the star contracts the temperature rises and when the star dilates the temperature lowers. This inducts brightness variations. 
+\paragraph*{}
+One of the known variable star, Puppis\footnote{Observed by Hubble telescope}, was observed to change brightness by a factor of 6 within 40 days ! The gas expanding around those stars create an optical illusion called a light echo: it seems that the star is pulsing, but the variation of volume cannot be seen for afar: they are too small, only the brightness difference is measured.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 8cm]{variable-star}
+\caption{Visualization of a light echo in a variable star}
+\end{figure}
+
+The period\footnote{Term very used in science to descrive periodical systems, meaning ``Time that an object takes to return in the exact same settings as it was''}  of these star goes from 1 day to 135 day. The interesting thing about the variable stars is that the brightness depends only on its position in the periodical cycle, and the position depends on the brightness. It is then possible to determine exactly the position of the star and so to draw a map of the universe based on the variable stars.
+ 
+\paragraph*{} 
+But variable stars aren't always periodical, for another type is an aperiodic one : the \textbf{eruptives} stars : as suggested by their name these stars undergo eruptions on their surface. The brightness varies only because of these \textit{eruptions} and they are very hard to predict. Since we experience lots of trouble trying to predict eruptions on earth, is seems impossible to predict one on another star, billions of billions of miles away.
+
+\paragraph*{}
+The last type of variable stars is the \textbf{novae}: some white dwarf in a binary system can become novae. If they are associated closely with a red giant in a binary star-system, the external layers of the red giant are attracted by the white dwarf. This phenomenon is called \textbf{matter transfer} and an accretion disk of spinning matter is formed around the white dwarf. This matter is composed mainly of hydrogen, which will ultimately be attracted by the white dwarf and will form a hot and dense layer around it. The brightness increases until the phenomenon stops. This type of variable star is not periodic and every change to the system is irreversible. 
+
+
+\subsection{Supernova}
+
+Those supernovae are found approximately at 100 billions light year away from our solar system. They were really important for the beginning of earth life because all the heavy elements were formed by the supernovae. Indeed only a star with such power could produce the heavier elements. At the beginning scientist only knew that the first one (until iron) were produced by the red giants in the fusion process but were unable to determine where did the heavier elements (like lead, or uranium or even copper) were created.
+
+\paragraph*{}
+
+ But in 1957, in the article B$^2$FH\footnote{\textit{Synthesis of elements in stars}}, a team of scientists\footnote{Geoffrey Burbidge, Margaret Burbidge, Fred Hoyle and William Fowler} exposed for the first time the theory that every element on earth was produced by supernovae. In the following years, they managed to find proof of this by analyzing the spectrum of the light at the moment of a supernovae explosion captured by a telescope. They found more than 90 elements within the spectrum ! When the elements burnt they gave off different colors, for example potassium shades the flames in purple, strontium in red, sodium in yellow, copper in green/blue. By diffracting the spectrum it is possible to determine the elements that compose the star's vestigial cloud.
+
+\paragraph*{}
+When the star has enough mass, it is layered with different fusion process when you move closer to the core. Of course, all stars are like this but with heavier ones, the separation is more clear.
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 6cm]{layers}
+\caption{Different layers of a massive star in the end of its life fusion cycle}
+\end{figure}
+
+\paragraph*{}
+The red giant\footnote{All massive stars, at the end of their fusion stages start growing and gets bigger and bigger, it is called a red giant.} at the end of the fusion sequence has an iron core, then a layer of helium, then a layer carbon, oxygen, neon,  magnesium, silicon, and finally neon. Each element produced is the fuel for the deeper layer's  fusion. This fusion process stops when the most stable element is created : \textbf{iron}. The star then has the mass of the earth and no longer has any energy source available to fight against gravitational forces. The core of the star contracts then relaxes and hits its outer layer. By a chain reaction, each layer hit its outer layer and finally the whole star explodes. The speed and the violence of the blast creates enough energy to create by fusion\footnote{Remember that fusion is actually created by atoms colliding, and the shock is creating new elements.} the other elements like zinc, gold, silver, argon, etc... The explosion spreads them in the whole cosmos, and it \textit{is} how all the elements heavier than iron were created on earth.
+
+\paragraph*{}
+The supernovae leaves behind it the remains of the star: a neutron star. The scientist predicted the existence of these stars theoretically before observing the first one. They observed in 1967 the first neutron star thanks to radio astronomy. By analyzing the different radio signal emitted in the universe, they discovered a precise periodic signal. The research led to the Crab nebula. A neutron star, also called pulsar is in the core of the residues of a supernovae.
+
+\subsection{After the supernovae : a pulsar}
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 6cm]{crab-nebula}
+\caption{The crab nebula pulsar}
+\end{figure}
+
+ The pulsar are very dense stars: a handful of matters would weigh as a small planet. They are so dense that the protons and the electrons in the stars merge to form neutrons\footnote{Remember that the white dwarf doesn't contract more because electrons exerce a repulsive force from one toward another. Neutron are much less repulsive.}. The pulsar weights between 1,4 time and 3 times the mass of the sun and is contained in a star whose diameter goes from 10 km to 20 km ! Because of the collapsing of the previous star, the rotation speed and the magnetic field also reaches incredible values ! 
+After the supernovae explosion, the star becomes very small and by the conservation of the kinetic moment the speed is increasing. It's just like a ice skater folding his arms: he turns faster\footnote{Imagine then the difference between a star bigger than the sun shrinking to 10km in diameter, the increase in rotation speed is huge.}. Moreover because of the conservation of the magnetic flux if the surface is reduced and the magnetic field increases. Pulsars are big magnets turning really fast.
+
+A normal star has a magnetic field of about 1 gauss, a pulsar has a magnetic field of some \textbf{thousands gauss}. Ergo, it emits a regular magnetic pulse that can be measured even from earth's outer atmosphere. Their regularity is extremely precise, which make scientist think that they are the best clock, even better than atomic clocks. In the figure 7, the blue lines are the magnetic field and the blue halo is the radiations emitted by the pulsar. On earth, it is this halo that is measured periodically. To spin around faster some pulsar associate with other with another star: for example with a red giant. The matters outflow from a star can reach the spinning matter around the pulsar and hit the pulsar. This gives more and more impulsion to the pulsar: in this case, the pulsar is called a millisecond pulsar. We even discovered a a binary star system of a planet with a pulsar. You can see a 3D modeling of such a system in figure \ref{bin}. There is another thing than can affect the speed of a pulsar: the crust of a neutron star is extremely resistant, but the inside of the star is only gas. Just like earth's earthquaques, forces inside the star can make the crust crack, and cause a \textit{starsquake}. When it cracks, the neutron star readjusts and changes its rotation\footnote{this phenomenon is spontaneous, to maintain a balanced state of the pulsar}. This phenomenon is called a glitch. 
+
+
+
+
+                          
+\begin{figure}[h]
+\centering
+\includegraphics[height = 6cm]{binary-system}
+\caption{Binary star system with a pulsar and a flow of matter in the center of mass}
+\label{bin}
+\end{figure}
+\newpage
+                            
+But even within the pulsars, there are different types. A specific kind of pulsar has been recently discovered and only 15 have been found over 400 billions stars in our galaxy, which makes this type of star extremely rare. They are called \textbf{Magnetars}. They are similar to the neutron stars with a magnetic field pushed to the extreme. 1000 millions of millions time higher than the one on Earth. If such a magnetic field was even in a solar system nearby ours, it wouldn't allow life to be, because it tends to align the water molecules as show in the figure \ref{water}. The magnetars remain a mystery for the scientists, because it is a very rare phenomenon to observe, and to gather data on.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 6cm]{water}
+\caption{water molecules aligned because of a high magnetic field}
+\label{water}
+\end{figure}
+
+If the supernova turn into a neutron star whose mass is more than 3 times the mass of the sun, they are called Black Holes. These star are so dense that even light cannot escape from the gravitational force. 
+
+\subsection{Black Holes}
+A black hole is a very dense neutron star. Two kinds of Black Holes exist: the active ones and the non-active ones. An active Black Hole is powered by matters that spins around it before the hole sucking all of it. While spinning, the gases rub against each other and heats until millions of degrees. That is why they emit light just before they disappear in the black hole. Next to these brilliant gases, the “horizon limit” is the line between the light and the darkness of the hole. Beyond this limit nothing passes: no matter, no light, no information, nothing we could see or measure. Often, the active black hole present a privileged direction of light as shown in the following picture.
+
+\begin{figure}[h]
+\centering
+\includegraphics[height = 4cm]{active-black-hole}
+\caption{Active black hole}
+\end{figure}
+
+
+This stellar object is as the pulsar, submitted to a very high magnetic field. The charged particles in the hot gases around the black hole are attracted by this magnetic field and follow it. It creates an outflow of matters that emit light perpendicularly to the disc of matter. For a long time scientist thought there were 3 types of quasar: the dragens, the blazars and the quasar. However the suppositions are now that they are all the same object seen in different angles.
+
+When an active black hole has no matter left around it, it starts spinning off and remains dark. Research on black holes are crucials to the understanding of the universe: the pre Big Bang singularity was also an extremely dense point that can be thought as an extremely small and tremendously dense star. Understanding one may very well lead to the understanding of the other. 
+
+\newpage
+
+
+
+\section*{Annex 1 : All the stages of a star's life}
+
+To recap all being said in this paper, we made a little understanding visual graph of all the possibilities in a star's life-cycle, in function of mass.
+
+
+
+\begin{figure}[h]
+\centering
+%\begin{tikzpicture}
+%\node[inner sep=0pt] (Born) at (0,0) {\includegraphics[height=2cm]{early-star}} ; \draw (Born.south) node [below] {Birth of a star};
+%\node[inner sep=0pt] (Neb) at (5,-5) {\includegraphics[height=2cm]{nebula}} ; \draw (Neb.south) node [below]{Nebula};
+%\node[inner sep=0pt] (RG) at (-5,-5) {\includegraphics[height=2cm]{red-giant}} ; \draw (RG.south) node [below]{Red Giant};
+%\node[inner sep=0pt] (Super) at (0,-10) {\includegraphics[height=2cm]{supernova}} ; \draw (Super.south) node [below]{Supernovae};
+%\node[inner sep=0pt] (WD) at (-7,-9) {\includegraphics[height=2cm]{white-dwarf}} ; \draw (WD.south) node [below]{White dwarf};
+%\node[inner sep=0pt] (NS) at (6.7,-10) {\includegraphics[height=2cm]{neutron-star}} ; \draw (NS.south) node [below]{Neutron star};
+%\node[inner sep=0pt] (BH) at (5.5,-14) {\includegraphics[height=2cm]{black-hole}} ; \draw (BH.south) node [below]{black hole};
+
+%\draw [->,very thick] (Born.west)[pos=0.1] to[bend right] (RG.north) [pos=0.8] ;
+%\draw [<-,very thick] (Born.east) to[bend left] (Neb.north) ;
+%\draw [->,very thick] (RG.west) to[bend right] (WD.north) ;
+%\draw [->,very thick] (RG.west) to[bend right] (WD.north) ;
+%\draw [->,very thick] (RG.320) to[bend right] (Super.west) ;
+%\draw [<-,very thick] (Neb.220) to[bend left] (Super.east) ;
+%\draw [->,very thick] (Super.east) to[bend right] (NS.west) ;
+%\draw [->,very thick] (NS.220) to[bend right] (BH.north) ;
+
+%\end{tikzpicture}
+\includegraphics[trim = {0 0 1mm 0},clip, width = \textwidth]{star-cycle}
+\end{figure}
+\newpage
+\section*{Annex 2 : Star classification in function of light}
+
+There are several ways to make a star classification, all this document, we have explained that the key factor is mass, but mass cannot be measured from afar : you cannot weight an object from billions of kilometers away. The criteria used ten is the luminosity and color of the star, basically red stars are less massive stars, then yellow stars, then blue stars. All of this ei explained in the following figure	 :
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{classification}
+\caption{Star classification by light emission}
+\end{figure}
+
+\newpage
+
+\subsection*{References}
+Articles :
+\begin{itemize}
+\item \href{http://www.schoolsobservatory.org.uk/learn/astro/stars/cycle}{School Observatory - Stars cycles}.
+\item \href{https://futurism.com/the-life-cycle-of-a-star/}{Futurism - The life cycle of a star}.
+\item \href{http://expositions.bnf.fr/ciel/elf/page12.htm}{National France Library - Understanding the star's life}
+\item \href{http://www.cnrs.fr/cw/dossiers/dosbig/decouv/xchrono/etoiles/niv1_1.htm}{France National Research Center - Star theory}
+\end{itemize}
+
+Videos :
+\begin{itemize}
+\item Arte videos - the life of a star, the star's fuel.
+\item Discovery channel - The Universe
+\end{itemize}
+
+%\bibliographystyle{unsrt}
+
+%\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
